@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .about-img-cam {
+  position: relative;
+  left: -100%;
+
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {left:-100%;}
+  to {left:0%;}
+}
+
+.about-text-title {
+  animation: fadeIn 5s;
+  animation-delay: 3s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */
+
+.carousel{
+  position: relative;
+  z-index: -99;
+}
+

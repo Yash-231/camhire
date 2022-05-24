@@ -1,0 +1,50 @@
+.card-container-1{
+    width: 500px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 15px -5px; */
+    transition: 0.3s; 
+    animation : ease-in;
+    display: flex;
+    background-color:rgb(36, 36, 36);
+}
+
+.img-left
+{
+    flex:1;
+    padding: 0;
+    margin-left: 0;
+}
+
+.content-right{
+    flex:2;
+}
+
+.image-container-1 img{
+    overflow: hidden;
+    height: 200px;
+
+}
+
+.card-container-1:hover{
+    transform : scale(1.05);
+    /* box-shadow: 0px 0px 15px 0px; */
+}
+
+.card-content-1{
+    margin : 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+
+}
+
+h3,p{
+    margin: 0;
+    padding: 0;
+
+}
+
+.card-title{
+    margin-bottom: 00.5rem;
+
+}
+
