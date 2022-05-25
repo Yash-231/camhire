@@ -2,13 +2,6 @@ import react from 'react';
 import '../card.css';
 import React, { useState, useCallback } from "react";
     export const  Card = props => {
-        const [isPhotoGrapherCardOpen, setIsPhotoGrapherCardOpen] = useState(false);
-        const [showData, setIsShowData] = useState(true);
-        const [photographerPosition, setIsPhotographerPosition] = useState(-1);
-
-          const closePhotographerSection = useCallback(index => {
-            props.setIsShowData(true)
-          }, []);
           const openPhotographerSection = useCallback(index => {
               props.setIsShowData(false)
               console.log(index)
@@ -27,18 +20,7 @@ import React, { useState, useCallback } from "react";
                     <p>{props.body}</p>
                 </div>
             </div>
-            {isPhotoGrapherCardOpen ?(
-            <div className='btn1'>
-                <a
-                    href='#photographersCard'
-                    className='btn btn-custom-card btn-lg page-scroll'
-                    onClick={() => closePhotographerSection()}
-                >
-                    View less
-                </a>{' '}
-            </div>
-
-          ):<div className='btn1'>
+<div className='btn1'>
           <a
               href='#photographersCard'
               className='btn btn-custom-card btn-lg page-scroll'
@@ -46,7 +28,7 @@ import React, { useState, useCallback } from "react";
           >
               View More
           </a>{' '}
-      </div>}
+      </div>
             
         </div>
     )

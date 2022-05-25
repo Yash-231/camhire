@@ -1,12 +1,15 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { Photographers_card } from "./photographers-card"
 import { Photographers_card_2 } from "./photographers-card-2"
+import Pagination from "./Pagination";
 import Card from "./Card";
 import '../scss_files/photographer.scss'
 import Collapsible from './collapsible.jsx';
 export const Photographers = (props) => {
   const [showing, setIsShowing] = useState(true);
   const [photographerIndex, setPhotographerIndex] = useState(-1);
+  const [productDataList, setProductDataList] = useState([]);
+
  const resetStatus = () => {
    setIsShowing(true);
    setPhotographerIndex(-1)
@@ -16,6 +19,9 @@ export const Photographers = (props) => {
   setPhotographerIndex(index);
   console.log("called")
  }
+ const onChangePage = (pageOfItems) => {
+    setProductDataList(pageOfItems)
+};
   return (
     <>
     {showing && photographerIndex ===-1?
@@ -38,8 +44,8 @@ export const Photographers = (props) => {
               <div className="col-md-4"><Photographers_card /></div>
               <div className="col-md-4"><Photographers_card /></div> */}
          
-          {props.data
-            ? props.data.map((d, i) => (
+          {productDataList
+            ? productDataList.map((d, i) => (
           <div key={`${d.title}-${i}`} onClick = {(i) => expandPhotographer(d.index)} className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
             <Card
               title={d.title}
@@ -55,15 +61,11 @@ export const Photographers = (props) => {
 : 'loading'}</div>
         </div>
       </div>
-      <div class="content_detail__pagination cdp" actpage="1">
-			<a href="#!-1" class="cdp_i">prev</a>
-      {props.data
-            ? props.data.map((d, i) => (
-			<a href={"#!"+i} class="cdp_i">{i}</a>
-      ))
-: 'loading'}
-			<a href="#!+1" class="cdp_i">next</a>
-		</div>
+      <Pagination
+          pageSize={3}
+          items={props.data}
+          onChangePage={onChangePage}
+        />
     </div>:<>
 
        <div id='photographers' className='text-center'>

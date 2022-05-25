@@ -666,6 +666,41 @@ color: #777;
 	background-image: none;
 	background-color: #C0C0C0;
 }
+.btn-custom-page-disabled {
+	font-family: 'Aclonica';
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #5ca9fb;
+	background: linear-gradient(to right, #414142 0%, #aeb0b1 100%);
+	padding: 10px 24px;
+	letter-spacing: 1px;
+	margin: 10;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+.btn-custom-page {
+	font-family: 'Aclonica';
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #5ca9fb;
+	background: linear-gradient(to right, #414142 0%, #aeb0b1 100%);
+	padding: 10px 24px;
+	letter-spacing: 1px;
+	margin: 10;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+.btn-custom-page:hover, .btn-custom-page:focus, .btn-custom-page.focus, .btn-custom-page:active, .btn-custom-page.active {
+	color: #fff;
+	background-image: none;
+	background-color: #C0C0C0;
+}
 
 .blogs-page{
 	height: 100vh;
@@ -716,3 +751,44 @@ color: #777;
 	margin-bottom: 40px;
 }
 
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*pagination-style*/
+.pro-result {
+  margin-top: 30px;
+  align-items: center;
+}
+.pro-result .pagination-style:last-child {
+  text-align: right;
+}
+.pagination-style .pagination ul {
+  padding-left: 0;
+  margin-bottom: 0px;
+  display: flex;
+}
+.pagination-style .pagination ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination-style .show-result p {
+  margin-bottom: 0px;
+  color: #bbb;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
