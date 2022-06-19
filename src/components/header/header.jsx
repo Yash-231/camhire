@@ -1,6 +1,8 @@
 import shortVid from '../video/CamHire_vid.mp4'
 import "./header.css"
 
+
+
 export const Header = (props) => {
     return (
         <div className="i">
