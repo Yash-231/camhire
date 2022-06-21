@@ -8,6 +8,8 @@ import '../scss_files/photographer.scss'
 import Collapsible_2 from './collapsible-2.jsx';
 import './photographers.css'
 import { useMediaQuery } from "react-responsive";
+import Modal from "./Modal.jsx";
+import useModal from './useModal';
 
 
 
@@ -54,6 +56,10 @@ export const Photographers = (props) => {
   const onChangePage = (pageOfItems) => {
     setProductDataList(pageOfItems)
   };
+
+  const {isShowing, toggle} = useModal();
+
+
   return (
     <>
       {showing && photographerIndex === -1 ?
@@ -131,20 +137,20 @@ export const Photographers = (props) => {
             </div>}
 
 
-          {(isTabletDevice || isMobileDevice) && 
+          {(isTabletDevice || isMobileDevice) &&
             <div className="container-fluid">
-            <div className="row">
-              <div className="col-xs-12 col-md-12">
+              <div className="row">
+                <div className="col-xs-12 col-md-12">
 
-                <Pagination_mobile className="pg-style"
-                  pageSize={1}
-                  items={props.data}
-                  onChangePage={onChangePage}
-                />
+                  <Pagination_mobile className="pg-style"
+                    pageSize={1}
+                    items={props.data}
+                    onChangePage={onChangePage}
+                  />
+                </div>
+
               </div>
-
-            </div>
-          </div>}
+            </div>}
 
 
         </div> : <>
@@ -152,42 +158,46 @@ export const Photographers = (props) => {
           <div id='photographers' className=''>
             <div className="header1">
 
-            <a className="back-btn style-back" href="#photographers" onClick={resetStatus}><p>back</p></a>
+              <a className="back-btn style-back" href="#photographers" onClick={resetStatus}><p>back</p></a>
             </div>
             <div className="text-center">
 
-            <div className='container'>
-              {props.data && photographerIndex !== -1
-                ?
-                <>
-                  <div className='section-title'>
-                    <h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                      dapibus leonec.
-                    </p>
-                  </div>
-                  <div key={photographerIndex} className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
-                    <div className='container'>
-                      <div className='row'>
-                        <div className='about-img-cam col-xs-12 col-md-6' data-aos="fade" data-aos-duration="1500">
-                          {' '}
-                          <img src={props.data[photographerIndex].imageUrl} className='img-responsive' alt='' />{' '}
-                        </div>
-                        <div className='about-text-title col-xs-12 col-md-6'>
-                          <div className='about-text'>
-                            <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[photographerIndex].codeword}</h2 >
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].mainbody} </p>
-                            <p data-aos="fade-up" data-aos-duration="1000"><Collapsible_2 /></p>
-                            <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
-
+              <div className='container'>
+                {props.data && photographerIndex !== -1
+                  ?
+                  <>
+                    <div className='section-title'>
+                      <h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2>
+                      <p data-aos="fade-up" data-aos-duration="1000">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+                        dapibus leonec.
+                      </p>
+                    </div>
+                    <div key={photographerIndex} className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
+                      <div className='container'>
+                        <div className='row'>
+                          <div className='about-img-cam col-xs-12 col-md-6' data-aos="fade" data-aos-duration="1500">
+                            {' '}
+                            <img src={props.data[photographerIndex].imageUrl} className='img-responsive' alt='' />{' '}
+                          </div>
+                          <div className='about-text-title col-xs-12 col-md-6'>
+                            <div className='about-text'>
+                              <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[photographerIndex].codeword}</h2 >
+                              <p data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].mainbody} </p>
+                              <p data-aos="fade-up" data-aos-duration="1000"><Collapsible_2 /></p>
+                              <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
+                              <button className="button-default" onClick={toggle}>Show Modal</button>
+                              <Modal
+                                isShowing={isShowing}
+                                hide={toggle}
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </> : "loading"}
-            </div>
+                  </> : "loading"}
+              </div>
             </div>
           </div></>}
     </>
