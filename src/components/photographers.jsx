@@ -76,13 +76,14 @@ export const Photographers = (props) => {
               <div className="col-md-4"><Photographers_card /></div>
               <div className="col-md-4"><Photographers_card /></div> */}
 
-                {productDataList
+                {productDataList//onClick={(i) => expandPhotographer(d.index)}
                   ? productDataList.map((d, i) => (
-                    <div key={`${d.title}-${i}`} onClick={(i) => expandPhotographer(d.index)} className="col-md-4 col-sm-12 col-lg-4 col-xl-4 col-6" data-aos='fade-up' data-aos-duration='1000'>
+                    <div key={`${d.title}-${i}`}  className="col-md-4 col-sm-12 col-lg-4 col-xl-4 col-6" data-aos='fade-up' data-aos-duration='1000'>
                       <Card
                         title={d.title}
                         imageUrl={d.imageUrl}
                         body={d.body}
+                        codeword = {d.codeword}
                         setIsPhotographerPosition={setPhotographerIndex}
                         index={i}
                         setIsShowData={setIsShowing}
@@ -180,12 +181,13 @@ export const Photographers = (props) => {
                             <p data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].mainbody} </p>
                             <p data-aos="fade-up" data-aos-duration="1000"><Collapsible_2 /></p>
                             <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
-
+                          
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </> : "loading"}
             </div>
             </div>
