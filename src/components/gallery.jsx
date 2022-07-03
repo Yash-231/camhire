@@ -52,7 +52,7 @@ export const Gallery = props => {
           
         </div>
 : <div className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
-   <a href="#portfolio" onClick={resetStatus}>back</a>
+   <a href="#portfolio" className="style-back-3" onClick={resetStatus}>back</a>
 <div className='container'>
 <div className='row'>
 <div className='about-img-cam col-xs-12 col-md-6' data-aos="fade" data-aos-duration="1500">
