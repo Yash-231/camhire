@@ -37,7 +37,18 @@ export const Blogs = (props) => {
   const isLaptop = useMediaQuery({
     query: "(min-width: 1824px)",
   });
-
+  const [isReadMore, setIsReadMore] = useState(false);
+  const readFunctionality = () => {
+    setIsReadMore(!isReadMore)
+    if(isReadMore){
+      if(isLaptop || isDesktopOrLaptop){
+        window.scrollTo(0, 2600)
+      }
+      else{
+        window.scrollTo(0, 3600)
+      }
+    }
+  }
 
   return (
     <>
@@ -108,16 +119,22 @@ export const Blogs = (props) => {
           <div id='blogs' >
             <div className="header1">
 
-              <a className="back-btn style-back-1" href="#blogs" onClick={resetStatus}><p><i class="fa-solid fa-arrow-left-long"></i>back</p></a>
-            </div>
+              </div>
 
             <div className='container text-center'>
               {props.data && blogIndex !== -1
                 ?
                 <>
                   <div className='section-title'>
-                    <h2 data-aos="fade-up" data-aos-duration="1000">{props.data[blogIndex].title}</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000">
+                  <div class="holder">
+                  <a className="back-btn style-back" href="#blogs" onClick={resetStatus}>
+                  <i class="fa fa-angle-double-left"></i> back</a>
+                  <div style={{"display":"inline-block"}}>
+                  
+                  <span ><h2 data-aos="fade-up" data-aos-duration="1000">{props.data[blogIndex].title}</h2></span>
+                  </div>
+                  </div>
+                   <p data-aos="fade-up" data-aos-duration="1000">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
                       dapibus leonec.
                     </p>
@@ -127,13 +144,21 @@ export const Blogs = (props) => {
                       <div className='row'>
                         <div className='about-img-cam col-xs-12 col-md-6' data-aos="fade" data-aos-duration="1500">
                           {' '}
-                          <img src={props.data[blogIndex].imageUrl} className='img-responsive' alt='' />{' '}
+                          <img src={props.data[blogIndex].imageUrl}style ={{width:"800px", height:"300px"}} className='img-responsive' alt='' />{' '}
                         </div>
                         <div className='about-text-title col-xs-12 col-md-6'>
                           <div className='about-text'>
                             <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[blogIndex].title}</h2 >
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data[blogIndex].complete_body} </p>
-                          </div>
+                            {
+                            props.data?
+                            <>{
+                            isReadMore?
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].complete_body)} </p>
+                            :
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].complete_body).slice(0,1000)} </p>
+                          } <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                          {isReadMore ?  "show less" : (props.data[blogIndex].complete_body).length<1000?"":" ...read more"}
+                          </a></>:""}</div>
                         </div>
                       </div>
                     </div>

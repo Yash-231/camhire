@@ -300,7 +300,7 @@ header .intro-text {
 
 /* Features Section */
 #features {
-	padding: 100px 0;
+	padding: 30px 0;
 	background: #171717;
 }
 
@@ -485,11 +485,17 @@ header .intro-text {
 }
 
 .style-back-3 {
-	position: absolute;
-	margin-top: -150px ;
-	margin-right: 100px;
-	color: #777;
-	cursor: pointer;
+	text-transform: capitalize;
+    line-height: 22px;
+    color: #777;
+    cursor: pointer;
+    text-align: left;
+    text-transform: uppercase;
+    float:left;
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
 
 }
 
@@ -512,7 +518,7 @@ header .intro-text {
 
 /* Testimonials Section */
 #testimonials {
-	padding: 100px 0;
+	padding: 30px 0;
 	background: #171717;
 }
 
@@ -584,7 +590,7 @@ header .intro-text {
 
 /* Contact Section */
 #contact {
-	padding: 100px 0 60px 0;
+	padding: 30px 0 60px 0;
 	background: linear-gradient(to right, #000000 0%, #000000 100%);
 	color: rgba(0, 0, 0, 0.75);
 }

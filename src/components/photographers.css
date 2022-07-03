@@ -37,26 +37,27 @@
 
 .style-back {
     text-transform: capitalize;
-    /* text-decoration: underline; */
-    /* background-color: #000000; */
-    /* color: rgb(255, 16, 16); */
     line-height: 22px;
     color: #777;
-    padding: 0px;
     cursor: pointer;
-    width: 100% !important;
-    /* height: 20px !important; */
-    position: absolute;
-    margin: 10% 0px 0px 14%;
+    text-align: left;
     text-transform: uppercase;
-    /* padding: 4px 16px 8px 0px; */
-    width: 125px;
+    float:left;
     font-family: open sans;
     font-weight: bold;
     font-size: 14px;
     font-style: normal;
 }
-
+#photographers i.fa {
+    font-size: 14px;
+     width: 10px; 
+    height: 0px;
+    padding: 0px 0;
+    background: transparent;
+    border-radius: 0%;
+    color: #fff;
+    box-shadow: 0;
+}
 .style-back:hover {
     color: white;
     text-decoration: underline;
@@ -79,7 +80,15 @@
     }
 
     .style-back {
-        position: relative;
-        margin: 0 0 0 0;
+        line-height: 22px;
+        color: #777;
+        cursor: pointer;
+        text-align: left;
+        text-transform: uppercase;
+        float:left;
+        font-family: open sans;
+        font-weight: bold;
+        font-size: 14px;
+        font-style: normal;
     }
 }

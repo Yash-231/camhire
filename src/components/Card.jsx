@@ -2,11 +2,11 @@ import '../card.css';
 import React, { useCallback } from "react";
 import axios from 'axios';
     export const  Card = props => {
-          const openPhotographerSection = useCallback(index => {
+          const openPhotographerSection = (index) => {
               props.setIsShowData(false)
-              console.log(index)
+              console.log(props)
               props.setIsPhotographerPosition(index)
-            }, []);
+            };
             const downloadQuote = (name) => {
                 const FileDownload = require('js-file-download');
                 

@@ -37,6 +37,20 @@ export const Photographers = (props) => {
     setIsShowing(true);
     setPhotographerIndex(-1)
   }
+  const [isReadMore, setIsReadMore] = useState(false);
+  const readFunctionality = () => {
+    setIsReadMore(!isReadMore)
+    if(isReadMore){
+      if(isLaptop || isDesktopOrLaptop){
+        window.scrollTo(0, 1800)
+      }
+      else{
+        window.scrollTo(0, 2700)
+      }
+    }
+
+    
+  }
   const onChangePage = (pageOfItems) => {
     setProductDataList(pageOfItems)
   };
@@ -71,7 +85,7 @@ export const Photographers = (props) => {
                         body={d.body}
                         codeword = {d.codeword}
                         setIsPhotographerPosition={setPhotographerIndex}
-                        index={i}
+                        index={d.index}
                         setIsShowData={setIsShowing}
 
                       />
@@ -139,16 +153,23 @@ export const Photographers = (props) => {
           <div id='photographers' className=''>
             <div className="header1">
 
-            <a className="back-btn style-back" href="#photographers" onClick={resetStatus}><p>back</p></a>
-            </div>
+             </div>
             <div className="text-center">
 
             <div className='container'>
+            
               {props.data && photographerIndex !== -1
                 ?
                 <>
                   <div className='section-title'>
-                    <h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2>
+                  <div class="holder">
+                 
+                  <a className="back-btn style-back "href="#photographers" onClick={resetStatus}>
+                  <i class="fa fa-angle-double-left"></i> back</a>
+                  <div style={{"display":"inline-block"}}>
+                    <span ><h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2></span>
+                    </div>
+                    </div>
                     <p data-aos="fade-up" data-aos-duration="1000">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
                       dapibus leonec.
@@ -164,10 +185,20 @@ export const Photographers = (props) => {
                         <div className='about-text-title col-xs-12 col-md-6'>
                           <div className='about-text'>
                             <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[photographerIndex].codeword}</h2 >
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].mainbody} </p>
-                            <p data-aos="fade-up" data-aos-duration="1000"><Collapsible_2 /></p>
+                          {
+                            props.data?
+                              <>{
+                             isReadMore?
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody)} </p>
+                            :
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody).slice(0,1000)} </p>
+                          }
+                            <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                            {isReadMore ?  "show less" : (props.data[photographerIndex].mainbody).length<1000?"":" ...read more"}
+                            </a>
+                            {isReadMore ?
                             <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
-                          
+                          :""}</>:""}
                           </div>
                         </div>
                       </div>
