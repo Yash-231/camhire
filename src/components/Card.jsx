@@ -1,6 +1,5 @@
-import react from 'react';
 import '../card.css';
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import axios from 'axios';
     export const  Card = props => {
           const openPhotographerSection = useCallback(index => {

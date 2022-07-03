@@ -1,6 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { Photographers_card } from "./photographers-card"
-import { Photographers_card_2 } from "./photographers-card-2"
+import React, { useState} from "react";
 import Pagination from "./Pagination";
 import Pagination_mobile from "./Pagination-mobile";
 import Card from "./Card";
@@ -35,21 +33,9 @@ export const Photographers = (props) => {
     query: "(min-width: 1824px)",
   });
 
-  const isDesktop = useMediaQuery({
-    query: "(min-device-width: 1200px && max-device-width: 1201px)",
-  });
-
-  const isBigScreen = useMediaQuery({
-    query: "(min-device-width: 1201px )",
-  });
   const resetStatus = () => {
     setIsShowing(true);
     setPhotographerIndex(-1)
-  }
-  const expandPhotographer = (index) => {
-    setIsShowing(false);
-    setPhotographerIndex(index);
-    console.log("called")
   }
   const onChangePage = (pageOfItems) => {
     setProductDataList(pageOfItems)

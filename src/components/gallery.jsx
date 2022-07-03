@@ -1,6 +1,4 @@
 import React, { useState, useCallback } from "react";
-import ImageViewer from "react-simple-image-viewer";
-import shortVid from './video/c405e59f2114f36defe07f92a771d9a5.mp4'
 import ReactPlayer from 'react-player'
 export const Gallery = props => {
   const [currentImage, setCurrentImage] = useState(0);

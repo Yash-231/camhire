@@ -1,24 +1,9 @@
 import about_image from '../images/landing_page.jpg'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import { useHistory } from 'react-router-dom';
-
 import Collapsible from './collapsible.jsx';
-
-import KnowMore from './knowmore.jsx';
-import JsonData from '../data/data.json'
-
-
 
 
 export const About = (props) => {
 
-  let history = useHistory();
   return (
     
 

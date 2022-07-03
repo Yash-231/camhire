@@ -1,13 +1,9 @@
 import Card from "./Card-2";
 import Pagination from "./Pagination";
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState} from "react";
 import { useMediaQuery } from "react-responsive";
 import Pagination_mobile from "./Pagination-mobile"
 import "./blogs.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-
 
 export const Blogs = (props) => {
   const [showing, setIsShowing] = useState(true);
@@ -40,14 +36,6 @@ export const Blogs = (props) => {
 
   const isLaptop = useMediaQuery({
     query: "(min-width: 1824px)",
-  });
-
-  const isDesktop = useMediaQuery({
-    query: "(min-device-width: 1200px && max-device-width: 1201px)",
-  });
-
-  const isBigScreen = useMediaQuery({
-    query: "(min-device-width: 1201px )",
   });
 
 

@@ -1,7 +1,4 @@
 import { Card } from "react-bootstrap"
-import Button from "react-bootstrap/esm/Button"
-import Collapsible from "./collapsible"
-
 export const Photographers_card = () => {
     return (
         <Card style={{ width: '18rem' }}>
