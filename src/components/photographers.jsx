@@ -1,6 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { Photographers_card } from "./photographers-card"
-import { Photographers_card_2 } from "./photographers-card-2"
+import React, { useState} from "react";
 import Pagination from "./Pagination";
 import Pagination_mobile from "./Pagination-mobile";
 import Card from "./Card";
@@ -35,21 +33,23 @@ export const Photographers = (props) => {
     query: "(min-width: 1824px)",
   });
 
-  const isDesktop = useMediaQuery({
-    query: "(min-device-width: 1200px && max-device-width: 1201px)",
-  });
-
-  const isBigScreen = useMediaQuery({
-    query: "(min-device-width: 1201px )",
-  });
   const resetStatus = () => {
     setIsShowing(true);
     setPhotographerIndex(-1)
   }
-  const expandPhotographer = (index) => {
-    setIsShowing(false);
-    setPhotographerIndex(index);
-    console.log("called")
+  const [isReadMore, setIsReadMore] = useState(false);
+  const readFunctionality = () => {
+    setIsReadMore(!isReadMore)
+    if(isReadMore){
+      if(isLaptop || isDesktopOrLaptop){
+        window.scrollTo(0, 1800)
+      }
+      else{
+        window.scrollTo(0, 2700)
+      }
+    }
+
+    
   }
   const onChangePage = (pageOfItems) => {
     setProductDataList(pageOfItems)
@@ -76,15 +76,16 @@ export const Photographers = (props) => {
               <div className="col-md-4"><Photographers_card /></div>
               <div className="col-md-4"><Photographers_card /></div> */}
 
-                {productDataList
+                {productDataList//onClick={(i) => expandPhotographer(d.index)}
                   ? productDataList.map((d, i) => (
-                    <div key={`${d.title}-${i}`} onClick={(i) => expandPhotographer(d.index)} className="col-md-4 col-sm-12 col-lg-4 col-xl-4 col-6" data-aos='fade-up' data-aos-duration='1000'>
+                    <div key={`${d.title}-${i}`}  className="col-md-4 col-sm-12 col-lg-4 col-xl-4 col-6" data-aos='fade-up' data-aos-duration='1000'>
                       <Card
                         title={d.title}
                         imageUrl={d.imageUrl}
                         body={d.body}
+                        codeword = {d.codeword}
                         setIsPhotographerPosition={setPhotographerIndex}
-                        index={i}
+                        index={d.index}
                         setIsShowData={setIsShowing}
 
                       />
@@ -152,16 +153,23 @@ export const Photographers = (props) => {
           <div id='photographers' className=''>
             <div className="header1">
 
-            <a className="back-btn style-back" href="#photographers" onClick={resetStatus}><p>back</p></a>
-            </div>
+             </div>
             <div className="text-center">
 
             <div className='container'>
+            
               {props.data && photographerIndex !== -1
                 ?
                 <>
                   <div className='section-title'>
-                    <h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2>
+                  <div class="holder">
+                 
+                  <a className="back-btn style-back "href="#photographers" onClick={resetStatus}>
+                  <i class="fa fa-angle-double-left"></i> back</a>
+                  <div style={{"display":"inline-block"}}>
+                    <span ><h2 data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].title}</h2></span>
+                    </div>
+                    </div>
                     <p data-aos="fade-up" data-aos-duration="1000">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
                       dapibus leonec.
@@ -177,15 +185,26 @@ export const Photographers = (props) => {
                         <div className='about-text-title col-xs-12 col-md-6'>
                           <div className='about-text'>
                             <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[photographerIndex].codeword}</h2 >
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data[photographerIndex].mainbody} </p>
-                            <p data-aos="fade-up" data-aos-duration="1000"><Collapsible_2 /></p>
+                          {
+                            props.data?
+                              <>{
+                             isReadMore?
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody)} </p>
+                            :
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody).slice(0,1000)} </p>
+                          }
+                            <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                            {isReadMore ?  "show less" : (props.data[photographerIndex].mainbody).length<1000?"":" ...read more"}
+                            </a>
+                            {isReadMore ?
                             <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
-
+                          :""}</>:""}
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </> : "loading"}
             </div>
             </div>

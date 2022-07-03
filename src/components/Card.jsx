@@ -1,13 +1,24 @@
-import react from 'react';
 import '../card.css';
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
+import axios from 'axios';
     export const  Card = props => {
-          const openPhotographerSection = useCallback(index => {
+          const openPhotographerSection = (index) => {
               props.setIsShowData(false)
-              console.log(index)
+              console.log(props)
               props.setIsPhotographerPosition(index)
-            }, []);
-    return (
+            };
+            const downloadQuote = (name) => {
+                const FileDownload = require('js-file-download');
+                
+                axios({
+                    url: `/get-pdf/${name}.pdf`,
+                    method: 'GET',
+                    responseType: 'blob', // Important
+                  }).then((response) => {
+                      FileDownload(response.data, `CAMHIRE-${name}.pdf`);
+                  });
+            }
+                return (
         <div className='card-container'>
             <div className='image-container'>
                 <img src={props.imageUrl} alt='' />
@@ -27,6 +38,14 @@ import React, { useState, useCallback } from "react";
               onClick={(index) => openPhotographerSection(props.index)}
           >
               View More
+          </a>{' '}
+      </div>
+      <div className='btn2'>
+          <a
+              className='btn btn-custom-card btn-lg page-scroll'
+              onClick={()=>downloadQuote(props.codeword)}
+          >
+              Get Quote
           </a>{' '}
       </div>
             

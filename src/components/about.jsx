@@ -1,24 +1,39 @@
+import React, { useState} from "react";
 import about_image from '../images/landing_page.jpg'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import { useHistory } from 'react-router-dom';
-
 import Collapsible from './collapsible.jsx';
-
-import KnowMore from './knowmore.jsx';
-import JsonData from '../data/data.json'
-
-
-
+import { useMediaQuery } from "react-responsive";
 
 export const About = (props) => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
-  let history = useHistory();
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px && max-device-width: 500px)",
+  });
+
+  const isTabletDevice = useMediaQuery({
+    query: "(max-width: 1224px)",
+  });
+
+  const isLaptop = useMediaQuery({
+    query: "(min-width: 1824px)",
+  });
+  
+  const [isReadMore, setIsReadMore] = useState(false);
+  const readFunctionality = () => {
+    setIsReadMore(!isReadMore)
+    if(isReadMore){
+      if(isLaptop || isDesktopOrLaptop){
+        window.scrollTo(0, 1100)
+      }
+      else{
+        window.scrollTo(0, 2300)
+      }
+    }
+
+    
+  }
   return (
     
 
@@ -33,8 +48,17 @@ export const About = (props) => {
           <div className='about-text-title col-xs-12 col-md-6'>
             <div className='about-text'>
               <h2 data-aos="fade-up" data-aos-duration="1500">About Us</h2 >
-              <p data-aos="fade-up" data-aos-duration="1000">{props.data ? props.data.paragraph : 'loading...'} </p>
-              <p data-aos="fade-up" data-aos-duration="1000"><Collapsible /></p>
+{                           
+                      props.data?
+                            isReadMore?
+                            <p data-aos="fade-up" data-aos-duration="1000">{props.data ? (props.data.paragraph).slice(0,1000) : 'loading...'} </p>
+                            :
+                            <p data-aos="fade-up" data-aos-duration="1000">{props.data ? props.data.paragraph : 'loading...'} </p>
+                          :""}
+                          {props.data?
+                            <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                            {isReadMore ?  "show less" : (props.data.paragraph).length<1000?"":" ...read more"}
+                            </a>:""}
               <h3 data-aos="fade-up" data-aos-duration="1000" >Why Choose Us?</h3>
               <div className='list-style'>
                 <div className='col-lg-6 col-sm-6 col-xs-12'>

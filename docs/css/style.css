@@ -311,10 +311,10 @@ header .intro-text {
 #photographers .service-desc {
 	margin: 10px 10px 20px;
 }
-#photographers h2 {
+#photographers span {
 	color: #C0C0C0;
 }
-#photographers .section-title h2::after {
+#photographers .section-title span::after {
 	position: absolute;
 	content: "";
 	background: rgba(255,255,255,.3);

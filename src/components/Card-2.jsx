@@ -1,6 +1,5 @@
-import react from 'react';
 import './Card2.css';
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 export const  Card = props => {
     const openBlogSection = useCallback(index => {
         props.setIsShowData(false)

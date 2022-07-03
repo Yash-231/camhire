@@ -44,7 +44,7 @@
 
   .i-title-wrapper {
     height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+    animation: openclose 10s ease-in-out infinite alternate;
   }
 
   @keyframes move {
@@ -108,6 +108,7 @@
     align-items: center;
     text-align: center;
     background-color: #000;
+    overflow-x: hidden;
   }
 
   .i-left {
@@ -154,6 +155,7 @@
   }
 
   .i-desc{
+      position: relative;
       margin-top: 50px;
       margin-bottom: 50px;
   }

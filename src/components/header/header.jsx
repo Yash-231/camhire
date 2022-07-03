@@ -1,5 +1,7 @@
 import shortVid from '../video/CamHire_vid.mp4'
 import "./header.css"
+import Typed from "react-typed";
+import camHireImage from '../video/camhire_logo.png'
 
 export const Header = (props) => {
     return (
@@ -7,14 +9,16 @@ export const Header = (props) => {
             <div className="i-left">
                 <div className="i-left-wrapper">
                     <h1 className="i-name">
-                        {props.data ? props.data.title : 'Loading'}
+                        <img src={camHireImage} style ={{width:"300px"}} alt="" />
                         <span></span></h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Lorem Ipsum</div>
-                            <div className="i-title-item">Lorem Ipsum</div>
-                            <div className="i-title-item">Lorem Ipsum</div>
-                            <div className="i-title-item">Lorem Ipsum</div>
+                        <Typed
+            strings={["Hello Friend ", "Long time no see"]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          />
                         </div>
                     </div>
                     <p className="i-desc">
