@@ -2,22 +2,22 @@
     "Header": {
 
         "title": "CAMHIRE",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+        "paragraph": "We narrate your stories incredibly with pictures as we capture excitement and emotionsin one frame. The humble talent at Camhire will beautifully document joyful momentsof your life.."
 
     },
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "paragraph": "Three years back, five mavericks saw a dream to take a journey off-beat from what theywere doing and jumped into a pool of creating stories by capturing moments. One day while sitting in the backyard, one of the stakeholders, also a passionate photographer, pondered the endless hurdles in the business world of photography. Whether it was about finding the best photographers from different corners of the country or picking the apt one according to your style. Camhire is an endeavour to overcome all those barriers and fulfil that very motive of photography. We help photographers and freelancers connect with clients all over Indiato provide desired services.Camhire started off as an expression of Suraj’s hunger for creativity to buildphotographic content by using different lenses. Adding to his passion for the trueessence of photography, Kuldeep and Yash brought their technical and financial minds,respectively. The marketing brain behind the lenses came forward with the emerging entrepreneur, Simar, who lent all his wisdom to turn a vision into a brand. Camhire became a perfect amalgamation of all the business skills and creative interests.Inspired to look at the world through camera lenses, a venture was born that aims to capture the beauty of human emotions in their truest form.",
         "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
+            " We help photographers connect with clients.",
+            " We are an intermediate third-party guarantee between photographer and their client.",
+            "  We minimize fraud done by both parties."
+            
         ],
         "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
+            " We provide 100% satisfactory deals between both parties.",
+            "  We help scale the photography industry. ",
+            " We monitor content and innovate gradually."
+           
         ]
     },
     "Services": [{
@@ -193,14 +193,14 @@
 "Blogs": [
     {
         "index":0,
-        "title": "Card Title",
+        "title": "Lights",
         "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
         "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
     },
     {
         "index":1,
-        "title": "Card Title 1",
+        "title": "Camera",
         "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
         "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
@@ -238,23 +238,24 @@
     },
     "Features": [{
             "icon": "fa fa-camera",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Third-Party Services ",
+            
+            "text": "We offer you the best third-party services by assuring zero fraud and 100% satisfactory deals. \n"
         },
         {
             "icon": "fa fa-camera",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": " Onboarding Genuine Photographers ",
+            "text": "We bring to you genuine and vetted photographers who are experts in the services they offer.."
         },
         {
             "icon": "fa fa-camera",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": " Know Your Photographers Inside Out",
+            "text": "Know every single detail about your photographer before you freeze them."
         },
         {
             "icon": "fa fa-camera",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Book Photographers From Anywhere In India ",
+            "text": " From Kashmir to Kanyakumari, you get the benefit of booking photographers from any corner of India."
         }
     ]
     

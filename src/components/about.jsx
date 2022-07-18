@@ -23,7 +23,7 @@ export const About = (props) => {
   const [isReadMore, setIsReadMore] = useState(false);
   const readFunctionality = () => {
     setIsReadMore(!isReadMore)
-    if(isReadMore){
+    if(!isReadMore){
       if(isLaptop || isDesktopOrLaptop){
         window.scrollTo(0, 1100)
       }
@@ -51,13 +51,13 @@ export const About = (props) => {
 {                           
                       props.data?
                             isReadMore?
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data ? (props.data.paragraph).slice(0,1000) : 'loading...'} </p>
+                            <p data-aos="fade-up" data-aos-duration="1000">{props.data ? (props.data.paragraph).slice(0,1000)  : 'loading...'} ...</p>
                             :
                             <p data-aos="fade-up" data-aos-duration="1000">{props.data ? props.data.paragraph : 'loading...'} </p>
                           :""}
                           {props.data?
                             <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
-                            {isReadMore ?  "show less" : (props.data.paragraph).length<1000?"":" ...read more"}
+                            {!isReadMore ?  "show less" : (props.data.paragraph).length<1000?"":" ...read more"}
                             </a>:""}
               <h3 data-aos="fade-up" data-aos-duration="1000" >Why Choose Us?</h3>
               <div className='list-style'>
