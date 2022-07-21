@@ -4,7 +4,7 @@ import { Header } from './components/header/header'
 import { Features } from './components/features'
 import { About } from './components/about'
 import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
+
 import { Footer } from './components/footer'
 import {Contact} from './components/contact'
 import KnowMore    from './components/knowmore.jsx'
@@ -43,7 +43,7 @@ const App = () => {
       <Photographers data={landingPageData.Photographers} />
       <Blogs data={landingPageData.Blogs} />
       <Gallery />
-      <Testimonials data={landingPageData.Testimonials} />
+      
       <Contact />
       <Footer />
       <Router>

@@ -238,14 +238,12 @@ header .intro-text {
 #features {
 	padding: 100px 0;
 	background: #202020;
-	margin-top: 100px;
-}
-.features-title{
-	margin-bottom: 20px;
+	
 }
 
+
 #features i.fa {
-	margin-top: 20px;
+	
 	font-size: 38px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
@@ -258,9 +256,8 @@ header .intro-text {
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 	
 }
-#features h3{
-	margin-bottom: 100px;
-}
+
+
 /* About Section */
 #about {
 	padding: 100px 0;

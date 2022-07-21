@@ -300,11 +300,13 @@ header .intro-text {
 
 /* Features Section */
 #features {
+	margin-top: 20px;
 	padding: 30px 0;
 	background: #171717;
 }
 
 #features i.fa {
+	margin-top: 22px;
 	font-size: 38px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
