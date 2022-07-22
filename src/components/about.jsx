@@ -23,14 +23,14 @@ export const About = (props) => {
   const [isReadMore, setIsReadMore] = useState(false);
   const readFunctionality = () => {
     setIsReadMore(!isReadMore)
-    if(!isReadMore){
+    /*if(!isReadMore){
       if(isLaptop || isDesktopOrLaptop){
         window.scrollTo(0, 1100)
       }
       else{
         window.scrollTo(0, 2300)
       }
-    }
+    }*/
 
     
   }
@@ -59,24 +59,28 @@ export const About = (props) => {
                             <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
                             {!isReadMore ?  "show less" : (props.data.paragraph).length<1000?"":" ...read more"}
                             </a>:""}
+                            {props.data &&
+                      !isReadMore?
               <h3 data-aos="fade-up" data-aos-duration="1000" >Why Choose Us?</h3>
+              : ''}
               <div className='list-style'>
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   <ul data-aos="fade-up" data-aos-duration="1000">
-                    {props.data
+                    {props.data &&
+                      !isReadMore
                       ? props.data.Why.map((d, i) => (
                         <li key={`${d}-${i}`}>{d}</li>
                       ))
-                      : 'loading'}
+                      : ''}
                   </ul>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1000" className='col-lg-6 col-sm-6 col-xs-12'>
                   <ul>
-                    {props.data
+                    {props.data && !isReadMore
                       ? props.data.Why2.map((d, i) => (
                         <li key={`${d}-${i}`}> {d}</li>
                       ))
-                      : 'loading'}
+                      : ''}
                   </ul>
                 </div>
               </div>
