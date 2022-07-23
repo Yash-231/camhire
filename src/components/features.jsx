@@ -9,7 +9,6 @@ export const Features = (props) => {
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
-                  {' '}
                   <h3 className="features-title" data-aos="fade-up" data-aos-duration="1000">{d.title}</h3>
                   {' '}
                   <i  data-aos="fade-up" data-aos-duration="1000" className={d.icon}></i>

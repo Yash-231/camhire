@@ -42,7 +42,7 @@ export const Blogs = (props) => {
     setIsReadMore(!isReadMore)
     if(isReadMore){
       if(isLaptop || isDesktopOrLaptop){
-        window.scrollTo(0, 2600)
+        window.scrollTo(0, 3200)
       }
       else{
         window.scrollTo(0, 3600)
@@ -58,8 +58,7 @@ export const Blogs = (props) => {
             <div className='section-title'>
               <h2 data-aos="fade-up" data-aos-duration="1000">Blogs</h2>
               <p data-aos="fade-up" data-aos-duration="1000">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                dapibus leonec.
+              Lights. Camera. Action: Simplified Into Words
               </p>
             </div>
             <div className='row'>
@@ -69,6 +68,7 @@ export const Blogs = (props) => {
                     <div key={`${d.title}-${i}`} onClick={(i) => expandBlog(d.index)} className="col-md-6 col-sm-12" data-aos='fade-up' data-aos-duration='1000'>
                       <Card
                         title={d.title}
+                        heading = {d.heading}
                         imageUrl={d.imageUrl}
                         body={d.body}
                         setIsBlogPosition={setBlogIndex}
@@ -135,8 +135,7 @@ export const Blogs = (props) => {
                   </div>
                   </div>
                    <p data-aos="fade-up" data-aos-duration="1000">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                      dapibus leonec.
+                   Lights. Camera. Action: Simplified Into Words
                     </p>
                   </div>
                   <div key={blogIndex} className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
@@ -148,17 +147,23 @@ export const Blogs = (props) => {
                         </div>
                         <div className='about-text-title col-xs-12 col-md-6'>
                           <div className='about-text'>
-                            <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[blogIndex].title}</h2 >
+                            <h2 data-aos="fade-up" data-aos-duration="1500">{props.data[blogIndex].heading}</h2 >
                             {
                             props.data?
                             <>{
                             isReadMore?
-                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].complete_body)} </p>
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].body)} </p>
                             :
-                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].complete_body).slice(0,1000)} </p>
-                          } <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
-                          {isReadMore ?  "show less" : (props.data[blogIndex].complete_body).length<1000?"":" ...read more"}
-                          </a></>:""}</div>
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[blogIndex].body).slice(0,1000)} </p>
+                          } 
+                          {isReadMore ? 
+                          <a   style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                            show less
+                          </a>:
+                          <a href="#blogs" style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                            ... read more
+                          </a>}
+                          </>:""}</div>
                         </div>
                       </div>
                     </div>

@@ -44,7 +44,7 @@ const App = () => {
       <Blogs data={landingPageData.Blogs} />
       <Gallery />
       
-      <Contact />
+      <Contact data = {landingPageData.Contact}/>
       <Footer />
       <Router>
       <Switch>

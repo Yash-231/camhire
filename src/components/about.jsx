@@ -51,34 +51,42 @@ export const About = (props) => {
 {                           
                       props.data?
                             isReadMore?
-                            <p data-aos="fade-up" data-aos-duration="1000">{props.data ? (props.data.paragraph).slice(0,1000)  : 'loading...'} ...</p>
-                            :
                             <p data-aos="fade-up" data-aos-duration="1000">{props.data ? props.data.paragraph : 'loading...'} </p>
-                          :""}
+                          
+                            :<p data-aos="fade-up" data-aos-duration="1000">{props.data ? (props.data.paragraph).slice(0,1000)  : 'loading...'} ...</p>
+                            
+                            :""}
                           {props.data?
-                            <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
-                            {!isReadMore ?  "show less" : (props.data.paragraph).length<1000?"":" ...read more"}
-                            </a>:""}
+                          <>
+                          {isReadMore ? 
+                            <a  style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                              show less
+                              </a>:
+                              <a href = "#about" style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                              ...read more
+                            </a>
+                              }
+                            </>:""}
                             {props.data &&
-                      !isReadMore?
+                      isReadMore?
               <h3 data-aos="fade-up" data-aos-duration="1000" >Why Choose Us?</h3>
               : ''}
               <div className='list-style'>
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   <ul data-aos="fade-up" data-aos-duration="1000">
                     {props.data &&
-                      !isReadMore
+                      isReadMore
                       ? props.data.Why.map((d, i) => (
-                        <li key={`${d}-${i}`}>{d}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000" key={`${d}-${i}`}>{d}</li>
                       ))
                       : ''}
                   </ul>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1000" className='col-lg-6 col-sm-6 col-xs-12'>
                   <ul>
-                    {props.data && !isReadMore
+                    {props.data && isReadMore
                       ? props.data.Why2.map((d, i) => (
-                        <li key={`${d}-${i}`}> {d}</li>
+                        <li data-aos="fade-up" data-aos-duration="1000" key={`${d}-${i}`}> {d}</li>
                       ))
                       : ''}
                   </ul>

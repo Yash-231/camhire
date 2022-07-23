@@ -28,12 +28,12 @@ import axios from 'axios';
                     <h3>{props.title}</h3>
                 </div>
                 <div className='card-body'>
-                    <p>{props.body}</p>
+                    <p>{props.body.slice(0,80)}...</p>
                 </div>
             </div>
 <div className='btn1'>
           <a
-              href='#photographersCard'
+              href='#photographers'
               className='btn btn-custom-card btn-lg page-scroll'
               onClick={(index) => openPhotographerSection(props.index)}
           >

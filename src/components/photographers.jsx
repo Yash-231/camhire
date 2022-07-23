@@ -40,14 +40,6 @@ export const Photographers = (props) => {
   const [isReadMore, setIsReadMore] = useState(false);
   const readFunctionality = () => {
     setIsReadMore(!isReadMore)
-    if(isReadMore){
-      if(isLaptop || isDesktopOrLaptop){
-        window.scrollTo(0, 1800)
-      }
-      else{
-        window.scrollTo(0, 2700)
-      }
-    }
 
     
   }
@@ -62,8 +54,8 @@ export const Photographers = (props) => {
             <div className='section-title'>
               <h2 data-aos="fade-up" data-aos-duration="1000">Our Photographers</h2>
               <p data-aos="fade-up" data-aos-duration="1000">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                dapibus leonec.
+              Camhire has a team of diverse talents from across the nation who are perfect for
+              capturing memories and etching them in your hearts.
               </p>
             </div>
             <div className='row'>
@@ -171,8 +163,8 @@ export const Photographers = (props) => {
                     </div>
                     </div>
                     <p data-aos="fade-up" data-aos-duration="1000">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-                      dapibus leonec.
+                    Camhire has a team of diverse talents from across the nation who are perfect for
+              capturing memories and etching them in your hearts.
                     </p>
                   </div>
                   <div key={photographerIndex} className="col-md-4" data-aos='fade-up' data-aos-duration='1000'>
@@ -180,7 +172,7 @@ export const Photographers = (props) => {
                       <div className='row'>
                         <div className='about-img-cam col-xs-12 col-md-6' data-aos="fade" data-aos-duration="1500">
                           {' '}
-                          <img src={props.data[photographerIndex].imageUrl} className='img-responsive' alt='' />{' '}
+                          <img style = {{height:"400px", width:"400px"}}src={props.data[photographerIndex].imageUrl} className='img-responsive' alt='' />{' '}
                         </div>
                         <div className='about-text-title col-xs-12 col-md-6'>
                           <div className='about-text'>
@@ -189,16 +181,23 @@ export const Photographers = (props) => {
                             props.data?
                               <>{
                              isReadMore?
-                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody)} </p>
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].body)} </p>
                             :
-                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].mainbody).slice(0,1000)} </p>
+                            <p data-aos="fade-up" data-aos-duration="1000">{(props.data[photographerIndex].body).slice(0,1000)} </p>
                           }
+                          {(props.data[photographerIndex].body).length>1000?
+                          <>
+                            {isReadMore ? 
+                            <a href="#photographers" style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
+                             show less
+                            </a>:
                             <a style={{"color":"white", "textDecorationThickness":"10px","cursor":"pointer"}} onClick={()=>readFunctionality()}>
-                            {isReadMore ?  "show less" : (props.data[photographerIndex].mainbody).length<1000?"":" ...read more"}
-                            </a>
+                              ... read more
+                            </a>}
                             {isReadMore ?
                             <h3 data-aos="fade-up" data-aos-duration="1000" >Speciality</h3>
                           :""}</>:""}
+                          </>:""}
                           </div>
                         </div>
                       </div>

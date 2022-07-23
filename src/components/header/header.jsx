@@ -14,11 +14,11 @@ export const Header = (props) => {
                     <div className="i-title">
                         <div className="i-title-wrapper">
                         <Typed
-            strings={["Hello Friend ", "Long time no see"]}
-            typeSpeed={40}
-            backSpeed={50}
-            loop
-          />
+                            strings={["Capturing Moments ", "Redifining Photography","Printing Imagination"]}
+                            typeSpeed={40}
+                            backSpeed={50}
+                            loop
+                        />
                         </div>
                     </div>
                     <p className="i-desc">

@@ -31,8 +31,11 @@ export const Gallery = props => {
  
   const data = [
     { heading:"Maternity", image:"img/gallery/maternity.JPG", video: "https://www.youtube.com/watch?v=ysz5S6PUM-U", title: "Maternity", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
-    { heading:"Wedding", image:"img/gallery/maternity.JPG", video: "https://www.youtube.com/watch?v=v7h7HRMe28A", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
-    { heading:"ABC", image:"img/gallery/maternity.JPG", video: "https://www.youtube.com/watch?v=ysz5S6PUM-U", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
+    { heading:"Wedding", image:"img/gallery/wedding.jpg", video: "https://www.youtube.com/watch?v=v7h7HRMe28A", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
+    { heading:"Product", image:"img/gallery/product.jpg", video: "https://www.youtube.com/watch?v=ysz5S6PUM-U", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
+    { heading:"Model", image:"img/gallery/model.JPG", video: "https://www.youtube.com/watch?v=ysz5S6PUM-U", title: "Maternity", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
+    { heading:"Branding", image:"img/gallery/tshirt.jpg", video: "https://www.youtube.com/watch?v=v7h7HRMe28A", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
+    { heading:"Haldi", image:"img/gallery/haldi.jpg", video: "https://www.youtube.com/watch?v=ysz5S6PUM-U", title: "Lorem Ipsum1", data: "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. " },
   
   ];
 
@@ -66,7 +69,7 @@ export const Gallery = props => {
                   <span ><h2 data-aos="fade-up" data-aos-duration="1000">{data[currentImage].heading}</h2></span>
                   </div>
                   </div>:<><h2 data-aos="fade-up" data-aos-duration="1000">Gallery</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+          <p>Welcome to a larger-than-life experience with us.</p>
           </>}
                           </div>
         {!isViewerOpen ?
@@ -75,7 +78,7 @@ export const Gallery = props => {
             {data.map(({ title, video, image }, index) => (
               <div key={index} onClick={() => openImageViewer(index)} className="col-sm-6 col-md-4 col-lg-4">
                 <div className="portfolio-item cursor">
-                <img src={image} className="img-responsive" alt="Project Title" />{" "}
+                <img src={image} style = {{width:"450px",height:"300px"}} className="img-responsive" alt="Project Title" />{" "}
       
                     </div>
                       </div>

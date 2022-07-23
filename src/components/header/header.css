@@ -43,6 +43,8 @@
   }
 
   .i-title-wrapper {
+    color: white;
+    font-size: 18px;
     height: 100%;
     animation: openclose 10s ease-in-out infinite alternate;
   }

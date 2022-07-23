@@ -1,12 +1,12 @@
 {
     "Header": {
 
-        "title": "CAMHIRE",
-        "paragraph": "We narrate your stories incredibly with pictures as we capture excitement and emotionsin one frame. The humble talent at Camhire will beautifully document joyful momentsof your life.."
+        "title": "CamHire",
+        "paragraph": "We narrate your stories incredibly with pictures as we capture excitement and emotionsin one frame. The humble talent at CamHire will beautifully document joyful momentsof your life.."
 
     },
     "About": {
-        "paragraph": "Three years back, five mavericks saw a dream to take a journey off-beat from what theywere doing and jumped into a pool of creating stories by capturing moments. One day while sitting in the backyard, one of the stakeholders, also a passionate photographer, pondered the endless hurdles in the business world of photography. Whether it was about finding the best photographers from different corners of the country or picking the apt one according to your style. Camhire is an endeavour to overcome all those barriers and fulfil that very motive of photography. We help photographers and freelancers connect with clients all over Indiato provide desired services. Camhire started off as an expression of Suraj’s hunger for creativity to build photographic content by using different lenses. Adding to his passion for the trueessence of photography, Kuldeep and Yash brought their technical and financial minds,respectively. The marketing brain behind the lenses came forward with the emerging entrepreneur, Simar, who lent all his wisdom to turn a vision into a brand. Camhire became a perfect amalgamation of all the business skills and creative interests.Inspired to look at the world through camera lenses, a venture was born that aims to capture the beauty of human emotions in their truest form.",
+        "paragraph": "Three years back, five mavericks saw a dream to take a journey off-beat from what theywere doing and jumped into a pool of creating stories by capturing moments. One day while sitting in the backyard, one of the stakeholders, also a passionate photographer, pondered the endless hurdles in the business world of photography. Whether it was about finding the best photographers from different corners of the country or picking the apt one according to your style. CamHire is an endeavour to overcome all those barriers and fulfil that very motive of photography. We help photographers and freelancers connect with clients all over Indiato provide desired services. CamHire started off as an expression of Suraj’s hunger for creativity to build photographic content by using different lenses. Adding to his passion for the trueessence of photography, Kuldeep and Yash brought their technical and financial minds,respectively. The marketing brain behind the lenses came forward with the emerging entrepreneur, Simar, who lent all his wisdom to turn a vision into a brand. CamHire became a perfect amalgamation of all the business skills and creative interests.Inspired to look at the world through camera lenses, a venture was born that aims to capture the beauty of human emotions in their truest form.",
         "Why": [
             " We help photographers connect with clients.",
             " We are an intermediate third-party guarantee between photographer and their client.",
@@ -84,58 +84,36 @@
             "name": "Johnathan Doe"
         }
     ],
-    "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
-        },
-        {
-            "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
-        }, {
-            "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
-        },
-        {
-            "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
-        }
-    ],
+    
     "Photographers": [{
         "index":0,
-        "imageUrl": "https://media.istockphoto.com/photos/in-the-photo-studio-with-professional-equipment-portrait-of-the-picture-id1196172395?k=20&m=1196172395&s=612x612&w=0&h=6kybVfbh-bULCkoLbTIJhfohoUdsjC88vZMLWX28cOQ=",
-        "title": "Suraj Madhwani",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "codeword": "OG FILMS",
-        "mainbody": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. "
+        "imageUrl": "img/team/Og.jpeg",
+         "title": "Suraj Madhwani",
+        "body": "Hello people! My name is Suraj Madhwani but you will find me on social media by the name of OG films. I’m a udaipur-based cinematographer, photographer and convervationist. My deep passion for adventure and discoveries first introduced me to the outdoor as well as environmental causes but as a versatile filmmaker. You will find me shhooting all my videos with sony a7siii, and there are compatible lenses required for the shoot. Also, my an fpv drone pilot and have 2.5 years of experience flying fpv drones. I have been making videos for past 3-4 years, and I have worked with some of the worlds leading brands like Amazon, Mahindra & Mahindra, Miraj Group, 5feet11 and more. Your search for the best photographer ends here with me! Let’s connect for some magic!",
+        "codeword": "OG FILMS"
         
     },
     {
         "index":1,
-        "imageUrl": "https://media.istockphoto.com/photos/in-the-photo-studio-with-professional-equipment-portrait-of-the-picture-id1196172395?k=20&m=1196172395&s=612x612&w=0&h=6kybVfbh-bULCkoLbTIJhfohoUdsjC88vZMLWX28cOQ=",
+        "imageUrl": "img/team/D-dev.jpeg",
         "title": "Dev Maheshwari",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-        ,"codeword": "D-DEV",
-        "mainbody": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+        "body": "Hello everyone! Myself Dev Maheshwari but you will find me on social media by the name of D-DEV. I’m a udaipur-based cinematographer, photographer and convervationist. My deep passion for adventure and discoveries first introduced me to the outdoor as well as environmental causes but as a versatile filmmaker. You will find me shhooting all my videos with sony a7siii, and there are compatible lenses required for the shoot. Also, my an fpv drone pilot and have 2.5 years of experience flying fpv drones. I have been making videos for past 3-4 years, and I have worked with some of the worlds leading brands like Amazon, Mahindra & Mahindra, Miraj Group, 5feet11 and more. Your search for the best photographer ends here with me! Let’s connect for some magic!",
+        "codeword": "D-DEV"
                 
     },
     {
         "index":2,
-        "imageUrl": "https://media.istockphoto.com/photos/in-the-photo-studio-with-professional-equipment-portrait-of-the-picture-id1196172395?k=20&m=1196172395&s=612x612&w=0&h=6kybVfbh-bULCkoLbTIJhfohoUdsjC88vZMLWX28cOQ=",
-        "title": "Bluddy Bhaskar",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-        ,"codeword": "BluddyPhotographer",
-        "mainbody": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-    },
+        "imageUrl": "img/team/Bhaskar.jpeg",
+        "title": " Bhaskar Sharma",
+        "body": "Hello folks! My name is Bhaskar Sharma but you will find me on social media by the name of Bhaskar_clicks. I’m a udaipur-based cinematographer, photographer and convervationist. My deep passion for adventure and discoveries first introduced me to the outdoor as well as environmental causes but as a versatile filmmaker. You will find me shhooting all my videos with sony a7siii, and there are compatible lenses required for the shoot. Also, my an fpv drone pilot and have 2.5 years of experience flying fpv drones. I have been making videos for past 3-4 years, and I have worked with some of the worlds leading brands like Amazon, Mahindra & Mahindra, Miraj Group, 5feet11 and more. Your search for the best photographer ends here with me! Let’s connect for some magic!",
+        "codeword": "BhaskarPhotography"
+          },
     {
         "index":3,
         "imageUrl": "https://media.istockphoto.com/photos/in-the-photo-studio-with-professional-equipment-portrait-of-the-picture-id1196172395?k=20&m=1196172395&s=612x612&w=0&h=6kybVfbh-bULCkoLbTIJhfohoUdsjC88vZMLWX28cOQ=",
-        "title": "Devilal Maheshwari",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-        ,"codeword": "D-DEV",
+        "title": "Divyanshu Paliwal",
+        "body": "Hello people! My name is Divyanshu Paliwal but you will find me on social media by the name of divyanshu_11 . I’m a udaipur-based cinematographer, photographer and convervationist. My deep passion for adventure and discoveries first introduced me to the outdoor as well as environmental causes but as a versatile filmmaker. You will find me shhooting all my videos with sony a7siii, and there are compatible lenses required for the shoot. Also, my an fpv drone pilot and have 2.5 years of experience flying fpv drones. I have been making videos for past 3-4 years, and I have worked with some of the worlds leading brands like Amazon, Mahindra & Mahindra, Miraj Group, 5feet11 and more. Your search for the best photographer ends here with me! Let’s connect for some magic!",
+        "codeword": "D-DEV",
         "mainbody": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
                 
     },
@@ -193,52 +171,30 @@
 "Blogs": [
     {
         "index":0,
-        "title": "Lights",
-        "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
-    },
+        "heading":"Just Imagine......",
+        "title": "Make Your Destinational Wedding Magical With CamHire At Udaipur",
+        "imageUrl": "img/blogs/wedding_image.jpg",
+        "body": "India is an amazingly diverse country filled with different interesting cultures, customs, and religions. It is unusual to find a place with so much diversity filled with ancient beauty and long history. India is known for its many celebrations and rituals. Indians live every day as if it's Carnival. One of the most extravagant things would have to be Indian weddings. Indian Weddings are unlike any other in the world. They are an extended celebration of love and dedication that culminates in an unforgettable night. Many cultures live in India, and each culture has very different aspects of a wedding ceremony. Indian weddings are a visual extravaganza because of every little detail, from involvement, effort and emotions to the wealth which changed from town to town. The grandeur of an Indian bride and groom is unmatched. Guests eagerly wait to see the divinity together. The grandeur radiated by the bride and groom leaves a lasting impression on all who witness her ceremony. As we raise a toast to the most memorable moment with the most glamorous people of a wedding, we want you to soak your senses in the surreal beauty of the pictures captured by CamHire. Secure your timeless moments in the best possible way and reminisce about them. We have a team of diverse talents from across the nation who are perfect for capturing memories and etching them in your hearts. We offer you the best third-party services by assuring zero fraud and 100% satisfactory deals. And what better place can you choose other than the Venice of East - Udaipur. Destination weddings in Udaipur are the latest trend. As they grow in popularity, we'll help you turn your event into a memorable celebration. We specialize in creating beautiful and unique events that others might not be able to achieve. Come to the exotic city to have the photography of your life."
+      },
     {
         "index":1,
-        "title": "Camera",
-        "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
-    
-    },
-    {
-        "index":2,
-        "title": "Card Title",
-        "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
-    },
-    {
-        "index":3,
-        "title": "Card Title",
-        "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
-     },
-    {
-        "index":4,
-        "title": "Card Title",
-        "imageUrl": "https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "body": "Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "complete_body":"Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit Sed enim turpis, tempor sit "
-     }
+        "heading":"The Importance Of Photography In Business And Startups",
+        "title": "How Is Photography Impacting Businesses And Startups In The Digital Age?",
+        "imageUrl": "img/blogs/photographer.jpg",
+        "body": " It is not surprising that in the digital age, photography has become the ultimate hit for startups and businesses. A photo can pack a powerful emotional punch, but more importantly, it connects to your audience on an emotional level. In today's digital age, businesses and startups increasingly rely on photography to help them stand out from the competition. Professional photography can help your business or startup to project a more professional and polished image, which can be vital to success in today's competitive marketplace. Photography can also capture important moments and events, which can help promote your business or startup to a broader audience. Social media platforms such as Instagram and Snapchat are hugely popular among businesses and startups. Using high-quality images on these platforms can help generate interest and engagement from potential customers. Professional photography services can be a worthwhile investment for any business or startup and help you achieve your desired results in today's digital age. As businesses and startups increasingly move into the digital age, hiring a photographer who understands how to capture high-quality images that represent you or your incidents well online becomes more important. Not only do these photos need to look good, but they also need to tell a story that speaks to your brand or your emotions. An experienced and creative photographer can take great photos and work with you to come up with ideas for shots that will show off your products or services in the best light possible. They will also understand the importance of Lightroom and Photoshop editing to create images that look professional and polished. Investing in quality photography is worth it not only for the great images you'll end up with but also for the peace of mind knowing that your best moments are being represented in the best way possible. So if you're looking to make a good impression in the digital age, hire a photographer who can help you do just that. Things To Keep In Mind When You Are Looking For A Photographer It is still essential to keep a few things in mind when looking for a photographer, especially if you are looking for someone to photograph the best moments of your life like a wedding or your new startup. First of all, you will want to make sure that the photographer has experience in photographing businesses and startups. This way, you can be sure that they know how to capture the essence of your emotions in their photos. Secondly, checking out the photographer's portfolios before hiring them is crucial. This will give you an idea of their style and whether or not it is a good fit for your needs. Lastly, be sure to communicate your needs and goals clearly with the photographer before booking them. This way, there will be no surprises, and you will end up with the photos you are looking for. At CamHire, you get to satiate all the above-mentioned needs as we give you trusted photographers who will capture the exotic moments, just in the way you want to have them. Every photographer has a unique approach, so you get to have the best of the best!"
+    }
 ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
+        "address": "5th Floor, D Building MIT College, Kothrud Paud Road, Pune Maharashtra(411038) ",
+        "phone": "+91-6378530832",
+        "email": "letsvendout@gmail.com",
         "facebook": "fb.com",
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },
     "Features": [{
             "icon": "fa fa-camera",
-            "title": "Third-Party Services ",
+            "title": "Third-Party And Legality Services  ",
             
             "text": "We offer you the best third-party services by assuring zero fraud and 100% satisfactory deals. \n"
         },

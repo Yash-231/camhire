@@ -11,7 +11,7 @@ export const  Card = props => {
             <div className='img-left'>
 
             <div className='image-container-1'>
-                <img src={props.imageUrl} alt='' />
+                <img  src={props.imageUrl} alt='' />
             </div>
             </div>
             <div className='content-right'>
@@ -21,12 +21,12 @@ export const  Card = props => {
                     <h3>{props.title}</h3>
                 </div>
                 <div className='card-body-1'>
-                    <p>{props.body}</p>
+                    <p>{props.body.slice(0,198)}</p>
                 </div>
             </div>
             <div className='btn1'>
           <a
-              href='#photographersCard'
+              href='#blogs'
               className='btn btn-custom-card btn-lg page-scroll'
               onClick={(index) => openBlogSection(props.index)}
           >
