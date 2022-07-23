@@ -2,7 +2,6 @@ import React, { useState} from "react";
 import Pagination from "./Pagination";
 import Pagination_mobile from "./Pagination-mobile";
 import Card from "./Card";
-import '../scss_files/photographer.scss'
 import Collapsible_2 from './collapsible-2.jsx';
 import './photographers.css'
 import { useMediaQuery } from "react-responsive";
